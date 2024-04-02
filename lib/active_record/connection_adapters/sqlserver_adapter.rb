@@ -111,7 +111,7 @@ module ActiveRecord
               client.execute("SET ANSI_DEFAULTS ON").do
             end
             client.execute("SET QUOTED_IDENTIFIER ON").do
-            client.execute("SET CURSOR_CLOSE_ON_COMMIT OFF").do
+            #client.execute("SET CURSOR_CLOSE_ON_COMMIT OFF").do
             client.execute("SET IMPLICIT_TRANSACTIONS OFF").do
             client.execute("SET TEXTSIZE 2147483647").do
             client.execute("SET CONCAT_NULL_YIELDS_NULL ON").do
