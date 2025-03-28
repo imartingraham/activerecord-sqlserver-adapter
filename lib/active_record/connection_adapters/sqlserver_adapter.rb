@@ -515,7 +515,7 @@ module ActiveRecord
         end
 
         @raw_connection.execute("SET QUOTED_IDENTIFIER ON").do
-        @raw_connection.execute("SET CURSOR_CLOSE_ON_COMMIT OFF").do
+        # @raw_connection.execute("SET CURSOR_CLOSE_ON_COMMIT OFF").do
         @raw_connection.execute("SET IMPLICIT_TRANSACTIONS OFF").do
         @raw_connection.execute("SET TEXTSIZE 2147483647").do
         @raw_connection.execute("SET CONCAT_NULL_YIELDS_NULL ON").do
